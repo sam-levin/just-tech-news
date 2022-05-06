@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // turn on connection to db and server
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
 
@@ -23,6 +23,11 @@ sequelize.sync({ force: true }).then(() => {
 //   "user_id": 1
 // }
 
+// {
+// 	"title": "Runbuddy reaches 4 million subscribers",
+//    "post_url": "https://runbuddy.com/press",
+//    "user_id": 1
+// }
 
 // {
 // 	"username": "penius",
