@@ -15,3 +15,17 @@ app.use(routes);
 sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+
+// {
+//   "title": "Runbuddy reaches 4 million subscribers",
+//   "post_url": "https://runbuddy.com/press",
+//   "user_id": 1
+// }
+
+
+// {
+// 	"username": "penius",
+// 	"email": "slevin@gmail.com",
+// 	"password" : "penistown"
+// }
